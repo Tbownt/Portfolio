@@ -1,10 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
-// import { imageData } from "../helpers/imageData";
+import { imageData } from "../helpers/imageData";
 import "react-multi-carousel/lib/styles.css";
+import { SkillItem } from "./SkillItem";
 
 export const Skills = () => {
-  //   const { skills } = imageData();
+  const { skills } = imageData();
 
   const responsive = {
     superLargeDesktop: {
@@ -48,22 +49,9 @@ export const Skills = () => {
                 autoPlay
                 autoPlaySpeed={3000}
               >
-                {/* <div className="item">
-                  <img src={skills[0].image} alt="skillsImage" />
-                  <h5>{skills[0].name}</h5>
-                </div> */}
-                <div className="item">
-                  <img src="" alt="skillsImage" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src="" alt="skillsImage" />
-                  <h5>Web Development</h5>
-                </div>
-                <div className="item">
-                  <img src="" alt="skillsImage" />
-                  <h5>Web Development</h5>
-                </div>
+                {skills.map((item) => (
+                  <SkillItem key={item.id} {...item} />
+                ))}
               </Carousel>
             </div>
           </Col>

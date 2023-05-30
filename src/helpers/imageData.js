@@ -1,23 +1,21 @@
 export const imageData = () => {
   const skills = [
-    { name: "Html5", image: "/images/html5.svg" },
-    { name: "Css3", image: "" },
-    { name: "JavaScript", image: "" },
-    { name: "TypeScript", image: "" },
-    { name: "React.js", image: "" },
-    { name: "Redux", image: "" },
-    { name: "Material UI", image: "" },
-    { name: "Bootstrap", image: "" },
-    { name: "Jest", image: "" },
-    { name: "Node.js", image: "" },
-    { name: "Express.js", image: "" },
-    { name: "PostgreSQL", image: "" },
-    { name: "MongoDB", image: "" },
-    { name: "Sequelize", image: "" },
-    { name: "FireBase", image: "" },
+    { id: 1, name: "Html5", image: "/images/html5.svg" },
+    { id: 2, name: "Css3", image: "/images/css3.svg" },
+    { id: 3, name: "JavaScript", image: "/images/javascript.svg" },
+    { id: 4, name: "TypeScript", image: "/images/typescript.svg" },
+    { id: 5, name: "React.js", image: "/images/react.svg" },
+    { id: 6, name: "Redux", image: "/images/redux.svg" },
+    { id: 7, name: "Material UI", image: "/images/materialui.png" },
+    { id: 8, name: "Bootstrap", image: "/images/bootstrap.svg" },
+    { id: 9, name: "Jest", image: "/images/jest.png" },
+    { id: 10, name: "Node.js", image: "/images/node.png" },
+    { id: 11, name: "Express.js", image: "/images/express.png" },
+    { id: 12, name: "PostgreSQL", image: "/images/postgresql.png" },
+    { id: 13, name: "MongoDB", image: "/images/mongodb.png" },
+    { id: 14, name: "Sequelize", image: "/images/sequelize.png" },
+    { id: 15, name: "FireBase", image: "/images/firebase.png" },
   ];
 
-  return {
-    skills,
-  };
+  return { skills };
 };
