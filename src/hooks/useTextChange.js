@@ -7,7 +7,7 @@ export const useTextChange = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(150 - Math.random() * 25);
   const [index, setIndex] = useState(1);
-  const deletingPeriod = Math.random() * 150 + 100;
+  const deletingPeriod = Math.random() * 150 + 1;
   const typingPeriod = Math.random() * 150 + 100;
   const toRotate = ["a Web Developer", "and Front-End Developer"];
   const period = 2000;

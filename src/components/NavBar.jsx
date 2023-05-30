@@ -34,12 +34,12 @@ export const NavBar = () => {
       <NavbarBS expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container fluid className="p-0 px-lg-3">
           <div className="nav-box"></div>
-          <NavbarBS.Brand href="#about">Andres Salom</NavbarBS.Brand>
+          <NavbarBS.Brand href="#home">Andres Salom</NavbarBS.Brand>
           <NavbarBS.Toggle aria-controls="basic-navbar-nav" />
           <NavbarBS.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
-                href="#about"
+                href="#home"
                 className={
                   activeLink === "about"
                     ? "active navbar-link about"

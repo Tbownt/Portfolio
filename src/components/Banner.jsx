@@ -29,9 +29,9 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  <span className="tagline mt-3">Welcome to my Portfolio</span>
                   <h1>
-                    {`Hi there! I'm Andres `}
+                    {`Hi there! I'm Andres 👨🏻‍💻 `}
                     <br />
                     <span className="txt-rotate">
                       <span className="wrap">{text}</span>
