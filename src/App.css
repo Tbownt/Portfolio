@@ -335,7 +335,11 @@ span.wrap {
 /* ******************Contact*********************** */
 
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(
+    156deg,
+    rgba(8, 69, 187, 1) 15%,
+    rgba(11, 246, 34, 0.8435749299719888) 100%
+  );
   padding: 100px 0 200px 0;
 }
 .contact img {
@@ -404,6 +408,7 @@ span.wrap {
   left: 0;
   z-index: 0;
   transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 .contact form button:hover::before {
   width: 100%;
@@ -412,7 +417,7 @@ span.wrap {
 /************ Footer Css ************/
 .footer {
   padding: 0 0 0px 0;
-  background-image: url("./assets/img/footer-bg.png");
+  background-image: url("./assets/images/footer-bg.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

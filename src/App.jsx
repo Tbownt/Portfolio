@@ -1,4 +1,11 @@
-import { NavBar, Banner, Skills, Projects } from "./components";
+import {
+  NavBar,
+  Banner,
+  Skills,
+  Projects,
+  Contact,
+  Footer,
+} from "./components";
 
 function App() {
   return (
@@ -7,6 +14,8 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Contact />
+      <Footer />
     </div>
   );
 }
