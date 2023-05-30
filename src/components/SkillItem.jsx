@@ -2,7 +2,7 @@
 export const SkillItem = ({ name, image }) => {
   return (
     <div className="item">
-      <img src={image} alt={name} style={{ width: "56%" }} />
+      <img src={image} alt={name} style={{ width: "50%" }} />
       <h5>{name}</h5>
     </div>
   );
