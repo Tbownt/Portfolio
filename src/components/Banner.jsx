@@ -1,12 +1,14 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import headerImg from "../assets/images/header-img.svg";
 import TrackVisibility from "react-on-screen";
 import { useTextChange } from "../hooks/useTextChange";
+import { LanguageContext } from "../context";
+import headerImg from "../assets/images/header-img.svg";
 import "animate.css";
 
 export const Banner = () => {
   const { tick, text, delta } = useTextChange();
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -29,20 +31,24 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline mt-3">Welcome to my Portfolio</span>
+                  <span className="tagline mt-3">
+                    {language === "es"
+                      ? " Bienvenido a mi Portafolio"
+                      : "Welcome to my Portfolio"}
+                  </span>
                   <h1>
-                    {`Hi there! I'm Andres 👨🏻‍💻 `}
+                    {language === "es"
+                      ? "Hola!, Soy Andres 👨🏻‍💻"
+                      : `Hi there! I'm Andres 👨🏻‍💻 `}
                     <br />
                     <span className="txt-rotate">
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the
-                    industry&apos;s standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book.
+                    {language === "es"
+                      ? "Soy un programador Front-end egresado del Bootcamp SoyHenry y Autodidacta, me he especializado en la libreria de React para todos mis proyectos y practicas. Estoy disponible para trabajar de forma remota. Estoy motivado por aprender con eficacia y confianza para completar tareas desafiantes."
+                      : "I am a Front-end programmer graduated from Bootcamp SoyHenry and self-taught, I have specialized in the React library for all my projects and practices. I am available to work remotely. I am motivated to learn effectively and confident to complete challenging tasks."}
                   </p>
                 </div>
               )}

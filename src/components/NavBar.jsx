@@ -1,17 +1,24 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import {
   Navbar as NavbarBS,
   Nav,
   Container,
   NavDropdown,
 } from "react-bootstrap";
+import { LanguageContext } from "../context";
 
 export const NavBar = () => {
+  //Estados
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
+  //Context
+  const { language, setEsLanguage, setEnLanguage } =
+    useContext(LanguageContext);
+
   //Se utiliza un efecto para cuando baje la pagina se aplique una animacion en el navbar
+  //Efectos
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -56,7 +63,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                Skills
+                {language === "en" ? "Skills" : "Habilidades"}
               </Nav.Link>
               <Nav.Link
                 href="#projects"
@@ -81,12 +88,52 @@ export const NavBar = () => {
                 Contact
               </Nav.Link>
               <NavDropdown
-                title={"Language"}
+                title={language === "es" ? "Certificados" : "Certificates"}
                 id="basic-nav-dropdown"
                 className="nav-link navbar-link"
               >
-                <NavDropdown.Item>Spanish</NavDropdown.Item>
-                <NavDropdown.Item>English</NavDropdown.Item>
+                <NavDropdown.Item
+                  href="https://www.efset.org/cert/3tvBSK"
+                  target="_blank"
+                >
+                  EF SET
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="https://certificates.soyhenry.com/new-cert?id=d3daac1140c4acf8d6382c21df8a192fd5f587a9a061b3026faa468566c13564"
+                  target="_blank"
+                >
+                  Henry Bootcamp
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown
+                title={language === "es" ? "CV" : "Curriculum"}
+                id="basic-nav-dropdown"
+                className="nav-link navbar-link"
+              >
+                <NavDropdown.Item
+                  href="/images/AndresSalomFrontEnd.pdf"
+                  download="AndresSalomFrontEnd.pdf"
+                >
+                  Español
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="/images/AndresSalomFrontEnd.pdf"
+                  download="AndresSalomFrontEnd.pdf"
+                >
+                  English
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown
+                title={language === "es" ? "Idioma" : "Language"}
+                id="basic-nav-dropdown"
+                className="nav-link navbar-link"
+              >
+                <NavDropdown.Item onClick={setEsLanguage}>
+                  Español
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={setEnLanguage}>
+                  English
+                </NavDropdown.Item>
               </NavDropdown>
             </Nav>
           </NavbarBS.Collapse>
