@@ -54,7 +54,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("about")}
               >
-                About me
+                {language === "es" ? "Sobre mi" : "About me"}
               </Nav.Link>
               <Nav.Link
                 href="#skills"
@@ -74,7 +74,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("projects")}
               >
-                Projects
+                {language === "es" ? "Proyectos" : "Projects"}
               </Nav.Link>
               <Nav.Link
                 href="#contact"
@@ -85,7 +85,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("contact")}
               >
-                Contact
+                {language === "es" ? "Contactame" : "Contact"}
               </Nav.Link>
               <NavDropdown
                 title={language === "es" ? "Certificados" : "Certificates"}

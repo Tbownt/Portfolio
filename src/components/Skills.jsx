@@ -3,9 +3,12 @@ import Carousel from "react-multi-carousel";
 import { imageData } from "../helpers/imageData";
 import "react-multi-carousel/lib/styles.css";
 import { SkillItem } from "./SkillItem";
+import { useContext } from "react";
+import { LanguageContext } from "../context";
 
 export const Skills = () => {
   const { skills } = imageData();
+  const { language } = useContext(LanguageContext);
 
   const responsive = {
     superLargeDesktop: {
@@ -35,12 +38,11 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx">
-              <h2>Skills</h2>
+              <h2>{language === "es" ? "Habilidades" : "Skills"}</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-                eius, labore quam, quis tenetur aliquid doloribus, molestias
-                voluptate repellendus deserunt error odio enim accusantium
-                exercitationem quidem vel soluta mollitia numquam.
+                {language === "es"
+                  ? "Estas tecnologias son las que he aprendido desde el principio de mi carrera, tanto en el Bootcamp como fuera de el de manera autodidacta, me siento confidente con las siguientes tecnologias"
+                  : "These technologies are the ones I have learned since the beginning of my career, both in the Bootcamp and outside it in a self-taught way, I feel confident with the following technologies"}
               </p>
               <Carousel
                 responsive={responsive}

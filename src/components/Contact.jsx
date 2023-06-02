@@ -1,7 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/images/contact-img.svg";
+import { LanguageContext } from "../context";
+import { useContext } from "react";
 
 export const Contact = () => {
+  const { language } = useContext(LanguageContext);
   return (
     <section className="contact" id="contact">
       <Container>
@@ -11,7 +14,9 @@ export const Contact = () => {
           </Col>
           <Col size={12} md={6}>
             <div>
-              <h2 className="d-flex justify-content-center">Get in Touch</h2>
+              <h2 className="d-flex justify-content-center">
+                {language === "es" ? "Contactame" : "Get in touch"}
+              </h2>
               <form
                 name="contact"
                 action="/contact"
@@ -25,7 +30,7 @@ export const Contact = () => {
                       type="text"
                       name="firstName"
                       required
-                      placeholder="First name"
+                      placeholder={language === "es" ? "Nombre" : "First Name"}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -33,7 +38,7 @@ export const Contact = () => {
                       type="text"
                       name="lastName"
                       required
-                      placeholder={"Last name"}
+                      placeholder={language === "es" ? "Apellido" : "Last Name"}
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -41,7 +46,9 @@ export const Contact = () => {
                       type="email"
                       name="email"
                       required
-                      placeholder={"Email Address"}
+                      placeholder={
+                        language === "es" ? "Correo" : "Email Address"
+                      }
                     />
                   </Col>
                   <Col size={12} sm={6} className="px-1">
@@ -49,7 +56,11 @@ export const Contact = () => {
                       type="number"
                       name="phone"
                       required
-                      placeholder={"Phone number"}
+                      placeholder={
+                        language === "es"
+                          ? "Numero de telefono"
+                          : "Phone Number"
+                      }
                     />
                   </Col>
                   <Col size={12} sm={12} className="px-1">
@@ -57,7 +68,7 @@ export const Contact = () => {
                       rows="6"
                       name="message"
                       required
-                      placeholder={"Message"}
+                      placeholder={language === "es" ? "Mensaje" : "Message"}
                     ></textarea>
                   </Col>
                   <Col size={12} sm={12}>
@@ -66,7 +77,7 @@ export const Contact = () => {
                       className="d-flex my-0 mx-auto"
                       style={{ borderRadius: "15px" }}
                     >
-                      <span>Send</span>
+                      <span>{language === "es" ? "Enviar" : "Send"}</span>
                     </button>
                   </Col>
                 </Row>

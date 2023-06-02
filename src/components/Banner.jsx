@@ -47,8 +47,8 @@ export const Banner = () => {
                   </h1>
                   <p>
                     {language === "es"
-                      ? "Soy un programador Front-end egresado del Bootcamp SoyHenry y Autodidacta, me he especializado en la libreria de React para todos mis proyectos y practicas. Estoy disponible para trabajar de forma remota. Estoy motivado por aprender con eficacia y confianza para completar tareas desafiantes."
-                      : "I am a Front-end programmer graduated from Bootcamp SoyHenry and self-taught, I have specialized in the React library for all my projects and practices. I am available to work remotely. I am motivated to learn effectively and confident to complete challenging tasks."}
+                      ? "Soy un Desarrollador Web orientado al Front-End egresado del Bootcamp SoyHenry y Autodidacta, me he especializado en la libreria de React para todos mis proyectos y practicas. Estoy disponible para trabajar de forma remota. Estoy motivado por aprender con eficacia y confianza para completar tareas desafiantes."
+                      : "I am a Web Developer oriented to Front-End graduated from Bootcamp SoyHenry and self-taught, I have specialized in the React library for all my projects and practices. I am available to work remotely. I am motivated to learn effectively and confident to complete challenging tasks."}
                   </p>
                 </div>
               )}
@@ -56,15 +56,9 @@ export const Banner = () => {
           </Col>
           <Col xs={12} md={12} lg={5} xl={6} className="mt-lg-5">
             <TrackVisibility>
-              {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__zoomIn" : ""
-                  }
-                >
-                  <img src={headerImg} alt="Header Img" className="p-5 my-5" />
-                </div>
-              )}
+              <div className={"animate__animated animate__zoomIn"}>
+                <img src={headerImg} alt="Header Img" className="p-5 my-5" />
+              </div>
             </TrackVisibility>
           </Col>
         </Row>
