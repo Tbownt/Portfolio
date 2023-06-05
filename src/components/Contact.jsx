@@ -18,7 +18,12 @@ export const Contact = () => {
                 {language === "es" ? "Contactame" : "Get in touch"}
               </h2>
               <form form name="contact" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+                <input
+                  type="hidden"
+                  name="form-name"
+                  action="/contact"
+                  value="contact"
+                />
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input
