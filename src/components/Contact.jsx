@@ -22,6 +22,7 @@ export const Contact = () => {
                 action="/contact"
                 method="POST"
                 data-netlify="true"
+                netlify
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <Row>
