@@ -17,13 +17,7 @@ export const Contact = () => {
               <h2 className="d-flex justify-content-center">
                 {language === "es" ? "Contactame" : "Get in touch"}
               </h2>
-              <form
-                name="contact"
-                action="/contact"
-                method="POST"
-                data-netlify="true"
-                netlify
-              >
+              <form form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
                 <Row>
                   <Col size={12} sm={6} className="px-1">
