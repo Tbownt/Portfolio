@@ -111,14 +111,14 @@ export const NavBar = () => {
                 className="nav-link navbar-link"
               >
                 <NavDropdown.Item
-                  href="/images/AndresSalomFrontEnd.pdf"
-                  download="AndresSalomFrontEnd.pdf"
+                  href="/images/CV_Andres_Salom_Español.pdf"
+                  download="CV_Andres_Salom_Español.pdf"
                 >
                   Español
                 </NavDropdown.Item>
                 <NavDropdown.Item
-                  href="/images/AndresSalomFrontEnd.pdf"
-                  download="AndresSalomFrontEnd.pdf"
+                  href="/images/CV_Andres_Salom_English.pdf"
+                  download="CV_Andres_Salom_English.pdf"
                 >
                   English
                 </NavDropdown.Item>
