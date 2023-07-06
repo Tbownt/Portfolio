@@ -21,7 +21,7 @@ export const projectsData = () => {
     {
       title: "Rick and Morty",
       description:
-        "This aplication is made with TypeScript and React, aswell as pure CSS it shows the information of all those Characters and wheter is dead, alive or missing",
+        "This application is made with TypeScript and React, as well as pure CSS it shows the information of all those Characters and whether are dead, alive, or missing",
       link: "tbownt-rickandmorty.netlify.app",
       repository: "https://github.com/Tbownt/Rick-and-Morty-TS",
       image: "/images/RickAndMorty.PNG",
