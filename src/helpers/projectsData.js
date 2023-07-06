@@ -19,12 +19,12 @@ export const projectsData = () => {
       image: "/images/journalapp.png",
     },
     {
-      title: "BuddyONG",
+      title: "Rick and Morty",
       description:
-        "BuddyONG is a fullstack application made with TypeScript for the server and JavaScript in the Frontend, also with state management with traditional Redux as well as ORMs like Sequelize, PostgreSQL database, geolocation, file upload, authentication with Auth0 and more! dedicated to help homeless pets.",
-      link: "https://buddyong.vercel.app/",
-      repository: "https://github.com/Tbownt/Front-Animals",
-      image: "/images/buddyong.png",
+        "This aplication is made with TypeScript and React, aswell as pure CSS it shows the information of all those Characters and wheter is dead, alive or missing",
+      link: "tbownt-rickandmorty.netlify.app",
+      repository: "https://github.com/Tbownt/Rick-and-Morty-TS",
+      image: "/images/RickAndMorty.PNG",
     },
     {
       title: "CalendarApp",
@@ -56,12 +56,12 @@ export const projectsData = () => {
       image: "/images/journalapp.png",
     },
     {
-      title: "BuddyONG",
+      title: "Rick and Morty",
       description:
-        "BuddyONG es una aplicación fullstack hecha con TypeScript para el servidor y JavaScript en el Frontend, también con gestión de estados con Redux tradicional así como ORMs como Sequelize, base de datos PostgreSQL, geolocalización, subida de archivos, autenticación con Auth0 ¡y mucho más! dedicada a ayudar a mascotas sin hogar.",
-      link: "https://buddyong.vercel.app/",
-      repository: "https://github.com/Tbownt/Front-Animals",
-      image: "/images/buddyong.png",
+        "Esta aplicacion esta creada con TypeScript and React, tambien con CSS puro y muestra la informacion de los personajes de la serie donde dice si estan muertos, vivos o perdidos",
+      link: "tbownt-rickandmorty.netlify.app",
+      repository: "https://github.com/Tbownt/Rick-and-Morty-TS",
+      image: "/images/RickAndMorty.PNG",
     },
     {
       title: "CalendarApp",
