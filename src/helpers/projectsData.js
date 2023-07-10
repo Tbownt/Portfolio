@@ -35,6 +35,14 @@ export const projectsData = () => {
         "https://github.com/Tbownt/React-Notes/tree/main/10-calendar-front",
       image: "/images/calendarapp.png",
     },
+    {
+      title: "Moonflix",
+      description:
+        "Moonflix was created with create-react-app, a Trailer app that shows you the video trailer, description, release date and more about any movie or tv show using TMDB API",
+      link: "https://tbownt-moonflix.netlify.app",
+      repository: "https://github.com/Tbownt/Moonflix",
+      image: "/images/Moonflix.png",
+    },
   ];
   const projectsES = [
     {
@@ -71,6 +79,14 @@ export const projectsData = () => {
       repository:
         "https://github.com/Tbownt/React-Notes/tree/main/10-calendar-front",
       image: "/images/calendarapp.png",
+    },
+    {
+      title: "Moonflix",
+      description:
+        "Moonflix fue creada con create-react-app, una aplicación de Trailer que te muestra el video trailer, descripción, fecha de estreno y más sobre cualquier película o programa de tv usando TMDB API.",
+      link: "https://tbownt-moonflix.netlify.app",
+      repository: "https://github.com/Tbownt/Moonflix",
+      image: "/images/Moonflix.png",
     },
   ];
   return {
